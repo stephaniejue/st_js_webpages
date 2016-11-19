@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>User Name and Password Checker</title>
+    <script type="text/javascript" src="UserNameandPass.js"></script>
+  </head>
+  <body>
+  <h1>User Name and Password Checker</h1>
+  <p>Username criteria:
+    <ul>
+      <li>Minimum 6 characters</li>
+      <li>Cannot contain $, #, or !</li>
+      <li>Cannot be the same as password</li>
+    </ul>
+  </p>
+  <p>Password criteria:
+    <ul>
+      <li>Minimum 6 characters</li>
+      <li>Must contain either $, #, or !</li>
+      <li>Cannot be the same as password</li>
+      <li>Cannot be "password"</li>
+      <li>Must contain one upper and one lower case letter</li>
+      <li>Must contain a digit</li>
+    </ul>
+  </p>
+  <input type="text" placeholder="Username" id="username"/>
+  <input type="text" placeholder="Password" id="password"/>
+  <input type="button" value="Submit" onclick="credChecker()"/>
+  <div>
+    <p id="message">
+    </p>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script type="text/javascript" src="hi_low.js"></script>
+    <title>High Low Game</title>
+  </head>
+  <body>
+    <div id="body1">
+    <h1>High Low Game</h1>
+      <!-- name -->
+      <p>Who wants to play?</p>
+      <input type="text" id="nameInput" placeholder="What's your name?" />
+      <input type="button" value="Submit" onclick="name1()" />
+    </br>
+    </br>
+      <!-- guessing game -->
+      <p>Let's go!</p>
+      <input type="text" id="textbox" placeholder="Guess a number" />
+      <input type="button" value="Guess" onclick="guess()" />
+      <p id="output"></p>
+    </div>
+    <div>
+      <input type="button" value="Restart Game" onclick="location.reload()" />
+    </div>
+  </body>
+  <footer>
+  </footer>
+</html>

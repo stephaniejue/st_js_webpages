@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Car Simulator</title>
+    <script type="text/javascript" src="car_simulator.js"></script>
+  </head>
+  <body>
+  <h1>Car Simulator</h1>
+//creates input texts for make model year
+  <input type="text" placeholder="make" id="make"/>
+  <input type="text" placeholder="model" id="model"/>
+  <input type="text" placeholder="year" id="year"/>
+  <input type="button" value="Submit" onclick="createNewCar()"/>
+
+  <div>
+    <p id="createdCar">
+    </p>
+  </div>
+
+//creates buttons for functions
+  <input type="button" value="Accelerate" onclick="increaseSpeed()"/>
+  <input type="button" value="Decelerate" onclick="decreaseSpeed()"/>
+  <input type="button" value="Max Accel" onclick="maxAccel()"/>
+  <input type="button" value="Max Brake" onclick="maxBrake()"/>
+  <input type="button" value="Oh no my brakes failed!" onclick="brakesFail()"/>
+  <div>
+    <p id="speed">
+    </p>
+  </div>
+  </body>
+</html>
